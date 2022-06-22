@@ -1,0 +1,50 @@
+.sider-border li {
+  list-style: none;
+}
+.sider-border li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #374151;
+  margin-bottom: 28px;
+}
+.sider-border {
+  border-bottom: 1px solid #e5e7eb;
+  width: 202px;
+  margin-top: 30px;
+}
+.sider-top .li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #374151;
+}
+
+.active-sider {
+  width: 202px;
+  height: 40px;
+  text-align: center;
+  padding: 0px 16px 0px 8px;
+  background: #eff6ff;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1d4ed8;
+}
+
+.sider-dwon li {
+  list-style: none;
+}
+
+.sider-dwon li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #374151;
+  margin-bottom: 28px;
+}

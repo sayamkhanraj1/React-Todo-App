@@ -1,0 +1,46 @@
+.header-container {
+  border-bottom: 1px solid #e5e7eb;
+}
+.header-btn {
+  width: 140px;
+  height: 40px;
+  background: #4338ca;
+  border-radius: 8px;
+  color: #fff;
+  outline: none;
+  border: none;
+  margin-right: 24px;
+}
+.brand-text {
+  width: 55px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  color: #111827;
+}
+.nav-input {
+  position: absolute;
+  width: 560px;
+  height: 40px;
+  right: 499px;
+  top: 16px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+.nav-input::placeholder {
+  width: 47px;
+  height: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6b7280;
+  padding-left: 10px;
+}
+.input-icon{
+  margin-right: 25px;
+}
