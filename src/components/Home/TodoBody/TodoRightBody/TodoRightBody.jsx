@@ -5,14 +5,15 @@ const TodoRightBody = () => {
   const [todoTasks, setTodoTasks] = useState([]);
 
   useEffect(() => {
-    fetch("https://peaceful-badlands-86895.herokuapp.com/addTodo")
+    fetch("https://peaceful-badlands-86895.herokuapp.com/addTodos")
       .then((response) => response.json())
       .then((data) => setTodoTasks(data));
   }, [todoTasks]);
+  
   const handleDelete = (id) => {
     const confirm = window.confirm("Are you sure to delete Task?");
     if (confirm) {
-      fetch(`https://peaceful-badlands-86895.herokuapp.com/addTodo/${id}`, {
+      fetch(`https://peaceful-badlands-86895.herokuapp.com/addTodos/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

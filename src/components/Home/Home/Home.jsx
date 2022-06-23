@@ -2,10 +2,10 @@ import React from "react";
 import Header from "../Header/Header";
 import TodoBody from "../TodoBody/TodoBody";
 
-const Home = () => {
+const Home = ({ user }) => {
   return (
     <div>
-      <Header />
+      <Header user={user} />
       <TodoBody />
     </div>
   );

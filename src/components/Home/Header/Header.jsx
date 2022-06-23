@@ -4,7 +4,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Modal from "../Modal/Modal";
 import "./Header.css";
-const Header = () => {
+const Header = ({ user }) => {
   const [openModal, setOpenModal] = useState(false);
   return (
     <div className="header-container">
@@ -34,9 +34,13 @@ const Header = () => {
                 {" "}
                 + New task
               </button>
-              <Link to="/login">
-                <button className="header-btn">Login</button>
-              </Link>
+              {user.email ? (
+                <Link to="/login">
+                  <button className="header-btn">Login</button>
+                </Link>
+              ) : (
+                  <button className="header-btn">Logout</button>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>

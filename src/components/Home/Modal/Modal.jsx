@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Modal.css";
 
 const Modal = ({ closeModal }) => {
@@ -75,7 +75,10 @@ const Modal = ({ closeModal }) => {
             Cancel
           </button>
           <button
-            onClick={() => onSubmit(stateData)}
+            onClick={() => {
+              onSubmit(stateData);
+              closeModal(false);
+            }}
             className="modal-addbtn"
           >
             Add
