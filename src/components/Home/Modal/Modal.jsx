@@ -12,7 +12,7 @@ const Modal = ({ closeModal }) => {
 
   const onSubmit = (data) => {
     console.log(data, "dflkajflajf");
-    fetch("http://localhost:5000/addTodo", {
+    fetch("https://peaceful-badlands-86895.herokuapp.com/addTodo", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

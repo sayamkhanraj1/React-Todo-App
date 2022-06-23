@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import profile from "../../../imges/profile.png";
+// import profile from "../../../imges/profile.png";
+import { Link } from "react-router-dom";
 import Modal from "../Modal/Modal";
 import "./Header.css";
 const Header = () => {
   const [openModal, setOpenModal] = useState(false);
-
   return (
     <div className="header-container">
       <Navbar
@@ -34,7 +34,9 @@ const Header = () => {
                 {" "}
                 + New task
               </button>
-              <button className="header-btn">Login</button>
+              <Link to="/login">
+                <button className="header-btn">Login</button>
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
